@@ -1,0 +1,44 @@
+/*Michiel Dausy
+r0900099*/
+/*add a self-selected stylesheet here*/
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 10px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 50%;
+}
+
+a {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li a {
+    flex: 100%;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    border: 3px solid #000;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    li a {
+        transition: all 1s;
+    }
+
+    li a:hover {
+        transform: translateY(-8px) scale(1.05);
+    }
+}

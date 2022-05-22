@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>These are the files that were found</title>
+    <link rel="stylesheet" type="text/css" href="img/main.css" />
+</head>
+<body>
+<h1>Dropbox</h1>
+<div th:each="file : ${dropboxFiles}">
+    <a href="https://www.dropbox.com">
+        <span th:text="${file}"></span>
+    </a>
+</div>
+<h1>Google Drive</h1>
+<div th:each="file : ${driveFiles}">
+    <a href="https://drive.google.com/drive/my-drive">
+        <span th:text="${file}"></span>
+    </a>
+</div>
+<h1>Box</h1>
+<div th:each="file : ${boxFiles}">
+    <a href="https://thomasmore.app.box.com/folder/0">
+        <span th:text="${file}"></span>
+    </a>
+</div>
+</body>
+</html>
